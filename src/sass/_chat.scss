@@ -1,0 +1,257 @@
+.chat-container {
+  position: fixed;
+  bottom: 130px;
+  right: 72px;
+  z-index: 100;
+
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 30px 60px 0 rgba(70, 41, 242, 0.14);
+  background-color: #FFFFFF;
+  overflow: hidden;
+  transition: opacity 150ms linear,
+  visibility 150ms linear;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.title {
+  padding: 30px;
+  background-color: #000000;
+}
+
+.title__top-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.20);
+  cursor: pointer;
+  border: none;
+}
+
+.title__bottom-section {
+  h1 {
+    margin-bottom: 5px;
+    color: #FFF;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  p {
+    color: #FFF;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 16px;
+    line-height: 1.75
+  }
+}
+
+.chat {
+  height: 100%;
+  padding: 30px;
+  overflow-y: auto;
+
+  &::placeholder {
+    color: rgba(13, 8, 44, 0.60);
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-clip: content-box;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #bebebe;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: gray;
+  }
+}
+
+.chat__message {
+  width: fit-content;
+  word-break: break-word;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &.chat__my-message {
+    margin-left: auto;
+  }
+}
+
+.chat__my-message-body {
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  border-radius: 10px 0 10px 10px;
+  background: #70F2D2;
+
+  > p {
+    color: #000;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.chat__my-message-time {
+  color: rgba(13, 8, 44, 0.40);
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  text-align: right;
+}
+
+
+.chat__bot-message-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.chat__bot-message-title {
+  margin-bottom: 5px;
+  color: #0D082C;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.chat__bot-message-body {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 0 10px 10px 10px;
+  background-color: #F1F7FF;
+
+  > p {
+    color: #0D082C;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+.chat__bot-message-time {
+  margin-left: 60px;
+  color: rgba(13, 8, 44, 0.40);
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.input__container {
+  flex-grow: 1;
+  min-height: 80px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.input__form {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input__textarea {
+  height: 23px;
+  width: 100%;
+  margin-right: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  font-family: Source Sans Pro, sans-serif;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+
+  &::placeholder {
+    color: rgba(13, 8, 44, 0.60);
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-clip: content-box;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #bebebe;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: gray;
+  }
+}
+
+.input__emodji-btn {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  background-color: transparent;
+}
+
+.input__gallery-btn {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.input__send-btn {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #70F2D2;
+}
