@@ -1,0 +1,36 @@
+{
+  "name": "web-plugin",
+  "version": "2.0.0",
+  "description": "",
+  "source": "src/index.js",
+  "targets": {
+    "default": {
+      "sourceMap": false
+    }
+  },
+  "scripts": {
+    "start": "parcel serve src/*.html",
+    "build": "parcel build  --dist-dir ../demo-react-app/web-plugin"
+  },
+  "keywords": [],
+  "dependencies": {
+    "axios": "^1.4.0",
+    "buffer": "^6.0.3",
+    "date-fns": "^2.30.0",
+    "modern-normalize": "^1.1.0",
+    "pusher-js": "^8.3.0"
+  },
+  "devDependencies": {
+    "@parcel/css": "^1.14.0",
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "@parcel/transformer-css": {
+    "cssModules": {
+      "pattern": "web-plugin-[hash]-[local]"
+    }
+  }
+}
