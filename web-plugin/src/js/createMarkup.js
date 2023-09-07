@@ -33,9 +33,6 @@ export const createInitialMarkup = () => {
     <textarea id="plugin--input__textarea" placeholder='Reply...' class="${
       style.textarea
     }"></textarea>
-<!--    <button class="${style.galleryBtn}" type='button'>-->
-<!--      <img src=${galleryIcon} alt="Gallery" loading="lazy" />-->
-<!--    </button>-->
     <button id="plugin--input__send-btn" class="${style.sendBtn}" type='submit'>
       <img src="https://cdn-icons-png.flaticon.com/512/60/60525.png" alt="Send" width="17" height="17" loading="lazy" />
     </button>
