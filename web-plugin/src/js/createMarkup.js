@@ -81,7 +81,7 @@ export const createBotTypingMessageMarkup = () => {
         <div class="${style.botMessageContainer}">
          <img src="https://marketing.brain.com.ua/static/articles_description_ua/img_20230126150626.png" alt="AI ChatBo" width="38" height="38" />
             <div class="${style.botMessageBody} chatbot-message__typing-container">
-              <img src="https://cdn1.iconfinder.com/data/icons/blobby-iconset/100/More-512.png" alt="Typing..." />
+              <img src="https://cdn1.iconfinder.com/data/icons/blobby-iconset/100/More-512.png" alt="Typing..." width="auto" height="25" />
               <img src=${botMessageCornerIcon} alt="" width={19} height={16} class="${style.botMessageCornerIcon}">
            </div>
         </div>
