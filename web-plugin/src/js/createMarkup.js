@@ -4,11 +4,6 @@ import * as style from '../styles/styles.module.scss';
 
 import botMessageCornerIcon from '../icons/botMessageCorner.svg';
 import myMessageCornerIcon from '../icons/myMessageCorner.svg';
-import sendIcon from '../icons/sendIcon.svg';
-import galleryIcon from '../icons/gallery.svg';
-import closeIcon from '../icons/closeIcon.svg';
-import typingIcon from '../icons/typing.svg';
-import robotIcon from '../icons/robot.svg';
 
 export const createInitialMarkup = () => {
   return `<div id="plugin--chat-container" class="${
@@ -16,10 +11,10 @@ export const createInitialMarkup = () => {
   } web-plugin-hidden">
   <div class="${style.title}">
     <div class="${style.titleTopSection}">
-      <img src=${robotIcon} alt="AI Chat Bot" loading="lazy" width="50px" height="50px" />
+      <img src="https://marketing.brain.com.ua/static/articles_description_ua/img_20230126150626.png" alt="AI Chat Bot" loading="lazy" width="50px" height="50px" />
       <h1>AI Chat Bot</h1>
       <button id="plugin--close-btn" class="${style.closeBtn}" type='button'>
-        <img src=${closeIcon} alt="Close" loading="lazy" />
+        <img src="https://static.thenounproject.com/png/1954009-200.png" alt="Close" width="20" height="20" loading="lazy" />
       </button>
     </div>
     <div class="${style.titleBottomSection}">
@@ -38,17 +33,17 @@ export const createInitialMarkup = () => {
     <textarea id="plugin--input__textarea" placeholder='Reply...' class="${
       style.textarea
     }"></textarea>
-    <button class="${style.galleryBtn}" type='button'>
-      <img src=${galleryIcon} alt="Gallery" loading="lazy" />
-    </button>
+<!--    <button class="${style.galleryBtn}" type='button'>-->
+<!--      <img src=${galleryIcon} alt="Gallery" loading="lazy" />-->
+<!--    </button>-->
     <button id="plugin--input__send-btn" class="${style.sendBtn}" type='submit'>
-      <img src=${sendIcon} alt="Send" loading="lazy" />
+      <img src="https://cdn-icons-png.flaticon.com/512/60/60525.png" alt="Send" width="17" height="17" loading="lazy" />
     </button>
   </div>
 </div>
 
 <button id="plugin--start-chat-btn" class="${style.startChatBtn}">
-  <img src=${robotIcon} alt="AI chatbot" />
+  <img src="https://marketing.brain.com.ua/static/articles_description_ua/img_20230126150626.png" alt="AI chatbot" />
 </button>`;
 };
 
@@ -72,7 +67,7 @@ export function createBotMessageMarkup({ body, time }) {
     style.message
   } plugin__chat-message plugin__chatbot-message">
       <div class="${style.botMessageContainer}">
-        <img src=${robotIcon} alt="AI ChatBot" width="38" height="38" />
+        <img src="https://marketing.brain.com.ua/static/articles_description_ua/img_20230126150626.png" alt="AI ChatBot" width="38" height="38" />
           <div class="${style.botMessageBody}">
             <p>${body}</p>
             <img src=${botMessageCornerIcon} alt="" width={19} height={16} class="${
@@ -87,9 +82,9 @@ export function createBotMessageMarkup({ body, time }) {
 export const createBotTypingMessageMarkup = () => {
   return `<div class="${style.message} plugin__chat-message plugin__chatbot-message">
         <div class="${style.botMessageContainer}">
-         <img src=${robotIcon} alt="AI ChatBo" width="38" height="38" />
+         <img src="https://marketing.brain.com.ua/static/articles_description_ua/img_20230126150626.png" alt="AI ChatBo" width="38" height="38" />
             <div class="${style.botMessageBody} chatbot-message__typing-container">
-              <img src=${typingIcon} alt="Typing..." />
+              <img src="https://cdn1.iconfinder.com/data/icons/blobby-iconset/100/More-512.png" alt="Typing..." />
               <img src=${botMessageCornerIcon} alt="" width={19} height={16} class="${style.botMessageCornerIcon}">
            </div>
         </div>

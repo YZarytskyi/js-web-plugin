@@ -30,6 +30,7 @@
   }
 
   > img {
+    filter: contrast(10);
     width: 50%;
     height: 50%;
   }
@@ -45,9 +46,9 @@
   pointer-events: all;
   visibility: visible;
 
-  width: 450px;
+  width: 420px;
   height: 80vh;
-  max-height: calc(100vh - 135px);
+  max-height: calc(100vh - 150px);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -80,22 +81,22 @@
 }
 
 .title {
-  padding: 20px 20px 20px 25px;
+  padding: 15px 20px 10px 15px;
   background-color: transparent;
   color: #000000;
 
   @media screen and (max-width: 600px) {
-    padding: 15px 15px 10px 15px;
+    padding: 10px 15px 10px 10px;
   }
 }
 
 .titleTopSection {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   @media screen and (max-width: 600px) {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 
   h1 {
@@ -113,6 +114,8 @@
   }
 
   > img {
+    filter: contrast(10);
+
     @media screen and (max-width: 600px) {
       width: 45px;
       height: 45px;
@@ -145,18 +148,17 @@
     margin: 0;
     color: #000000;
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.4;
 
     @media screen and (max-width: 600px) {
-      font-size: 14px;
-      line-height: 1.5;
+      font-size: 12px;
     }
   }
 }
 
 .chat {
-  height: calc(100% - 177px - 80px);
+  height: calc(100% - 139px - 80px);
   width: 100%;
   margin: 0 auto;
   padding: 25px 20px;
@@ -165,7 +167,7 @@
   background-color: #ffffff;
 
   @media screen and (max-width: 600px) {
-    height: calc(100% - 138px - 60px);
+    height: calc(100% - 119px - 60px);
     padding: 20px 15px;
   }
 
@@ -251,6 +253,8 @@
   gap: 10px;
 
   > img {
+    filter: contrast(10);
+
     @media screen and (max-width: 600px) {
       width: 30px;
       height: 30px;
